@@ -56,7 +56,7 @@ const main = () => {
   //     and the life skills needed for a successful career and job market competitiveness.
 
   // splitting the string into one letter some when typed it doesn't paste the whole thing
-  let codeTextArray = codeCrewString.split('');
+  let codeTextArray = codeCrewString.split(' ');
 
   let newTextArr = [];
   textarea.addEventListener('keydown', (e) => {
@@ -131,7 +131,7 @@ const main = () => {
   let timer = () => {
     // let timer start from 10
     let timeleft = 10;
-    var downloadTimer = setInterval(() => {
+    let downloadTimer = setInterval(() => {
       if (timeleft <= 0) {
         clearInterval(downloadTimer);
         // once timer hits 0 display this
